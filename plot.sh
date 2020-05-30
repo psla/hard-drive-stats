@@ -12,7 +12,7 @@ gnuplot <<-EOFMarker
     set pointsize 0
     set yrange [0:220]
     set y2range [0:60]
-    plot "~tmp" using 1:2 with lines title "read" , \
-         "~tmp" using 1:3 with lines title "write", \
-         "~tmp" using 1:4 with lines title "temp" axes x1y2
+    plot "~tmp" using 1:2 with lines title "Read [MB/s]" , \
+         "~tmp" using 1:3 with lines title "Write [MB/s]", \
+         "~tmp" using 1:4 with lines title "Temperature [Celsius]" axes x1y2
 EOFMarker
