@@ -6,10 +6,9 @@ gnuplot <<-EOFMarker
     set title "Write/read performance during badblocks" font ",14" textcolor rgbcolor "royalblue"
     set xlabel "Time"
     set ylabel "MB/s"
-    set timefmt "%y/%m/%d"
     set xdata time
     set pointsize 1
-    plot "~tmp" using 0:1 with linespoints
-    plot "~tmp" using 0:2 with linespoints
-    plot "~tmp" using 0:3 with linespoints
+    plot "~tmp" using 0:1 with linespoints title "read", \
+         "~tmp" using 0:2 with linespoints title "write", \
+         "~tmp" using 0:3 with linespoints title "temp"
 EOFMarker
