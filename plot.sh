@@ -1,8 +1,8 @@
 #!/bin/bash
 python parse.py > ~tmp
 gnuplot <<-EOFMarker
-    set terminal pngcairo size 350,262 enhanced font 'Verdana,10'
-    set output 'graph.png'
+    set terminal pdf enhanced font 'Verdana,10'
+    set output 'graph.pdf'
     set title "Write/read performance during badblocks" font ",14" textcolor rgbcolor "royalblue"
     set xlabel "Time"
     set ylabel "MB/s"
