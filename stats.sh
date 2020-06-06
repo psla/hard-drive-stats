@@ -1,5 +1,5 @@
 #!/bin/bash
-drive=sdc
+drive=$1
 fdisk -l /dev/$drive
 while [ true ]
 do
