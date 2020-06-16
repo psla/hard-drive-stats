@@ -1,5 +1,5 @@
 import re
-file = open('wd-elements-12TB-WD120EMAZ.stats.sda.txt', 'r')
+file = open('sdc.txt', 'r')
 lines = file.readlines()
 
 # The input file (stats) has a certain probing frequency. 
